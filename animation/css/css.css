@@ -1,3 +1,6 @@
+body{
+	height: 600px;
+}
 .t{
 	height: 80px;
 	width: 100px;
@@ -46,7 +49,7 @@ margin-top: 50%;
 	background-color: #A6601B;
 	width: 400px;
 	height: 400px;
-	transition:   transform 3s,border-radius 1s;
+	transition:   transform 3s,border-radius 3s;
 
 
 }
@@ -57,4 +60,26 @@ border-radius: 100%;
 /*  height: 25px;
   width: 25px;
 */
+}
+
+.w{
+margin-top: 0;
+margin-left: 0;
+	background-color: #A6601B;
+	width: 400px;
+	height: 400px;
+	transition: margin-left 2s,margin-right 2s, width 2s, transform 3s,border-radius 3s,margin-top 2s;
+
+
+}
+
+.w:hover {
+	margin-right: 100%;
+	margin-top: 100%;
+	margin-left: 100%;
+ transform: rotate(360deg);
+border-radius: 100%;
+  /*height: 25px;*/
+  width: 600px;
+/*margin: 400px 400px*/
 }
