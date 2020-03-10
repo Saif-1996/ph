@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script src="js/jq.js"></script>
+	
+	<script type="text/javascript">
+
+
+ $(document).ready(function(){
+var clas;
+ 	var price;
+ 	var total=0;
+     // alert($(".pr1 h5").text());
+
+  $("input").keyup(function(){
+    clas=$(this).attr("class");
+    // alert("clas");
+    price=parseInt($("."+clas+" h5").text())*parseInt($(this).val());
+     alert($("."+clas+" h5").text());
+$("."+clas+" h4").text(price);
+total+=price;
+$("#Total").text(total);
+  });
+
+});
+
+	</script>
+	
+</head>
+<body>
+
+
+
+<table border="1"><tr>
+	<th>Product</th>
+	<th>Price</th>
+	<th>Eq</th>
+	<th>Total</th>
+
+</tr>
+
+<tr>
+<td>T-shirt</td>
+<td class="pr1" id="ss"><h5>50</h5></td>	
+<td><input type="text" id="p1" class="pr1" name=""></td>	
+<td id="t1" class="pr1 pr"><h4></h4></td>	
+
+</tr>
+
+<tr>
+<td>Hat</td>
+<td class="pr2"><h5>40</h5></td>	
+<td><input type="text" id="p2" class="pr2" name=""></td>	
+<td id="t2" class="pr2 pr"><h4></h4></td>	
+
+</tr><tr>
+<td>Watch</td>
+<td class="pr3"><h5>200</h5></td>	
+<td><input type="text" id="p3" class="pr3" name=""></td>	
+<td id="t3" class="pr3 pr"><h4></h4></td>	
+
+</tr><tr>
+<td>Boots</td>
+<td class="pr4"><h5>90</h5></td>	
+<td><input type="text" id="p4" class="pr4" name=""></td>	
+<td id="t4" class="pr4 pr"><h4></h4></td>	
+
+</tr>
+<tr>
+<td></td>
+<td>b</td>	
+<td></td>	
+<td id="Total"></td>	
+
+</tr>
+</table>
+
+
+</body>
+</html>
