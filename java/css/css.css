@@ -1,0 +1,43 @@
+#main{
+width: 100%;
+	display: grid;
+grid-template-columns: 20% 20% 20% 20%;
+margin: auto;
+grid-gap: 15px;
+}
+#main div{
+/*background-color: red;*/
+	width: 200px;height: 200px;
+	margin: 0 auto
+
+}
+
+.card{perspective: 1000px;
+
+}
+
+img{
+	height: 100%;
+	width: 100%
+}
+
+.card div img{	border-radius: 10px;}
+
+.fr{
+
+	backface-visibility: hidden;
+}
+
+.ba{
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+@keyframes fli{
+
+	to{
+		transform: rotateY(180deg);
+
+	}
+
+}

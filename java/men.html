@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jq.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+ $("#na").focus(function(){
+    $("img").attr("src","images/m.jpg");
+  });
+  $("#pa").focus(function(){
+    $("img").attr("src","images/m2.jpg");
+  });
+  // $("input").focusout(function(){
+  //  $("img").hide();
+  // });
+
+
+});
+
+
+	</script>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/pic.css">
+</head>
+<body>
+
+<div class="for">
+	<img >
+<label for="na"> Name:</label>
+	<input id="na" type="text" name=""><br>
+<label for="na"> Password:</label>
+
+	<input id="pa" type="password" name="">
+</div>
+</body>
+</html>

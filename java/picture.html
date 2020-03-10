@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jq.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("img").hide();
+
+			  var pic1 = ["coupe", "black", "mercedes amg", "sport"];
+			  var pic2 = ["family", "white", "mercedes jeep", "2019"];
+			  var pic3 = ["g class", "black g", "mercedes gclass", "offroad"];
+			  var pic4 = ["fly", "futuer", "mercedes f", "smart"];
+
+
+$(".ch").blur(function(){
+  var i;
+for (i = 0; i < pic1.length; i++) {
+
+if (pic1[i]==$(this).val()) {
+$("img").hide();
+$("#s1").show();
+}
+
+if (pic2[i]==$(this).val()) {
+$("img").hide();
+$("#s2").show();
+}
+
+if (pic3[i]==$(this).val()) {
+$("img").hide();
+$("#s3").show();
+}
+
+if (pic4[i]==$(this).val()) {
+$("img").hide();
+$("#s4").show();
+}
+
+}
+});
+
+
+});
+
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/pic.css">
+</head>
+<body>
+<div>
+	<img id="s1" src="images/s1.jpg">
+	<img id="s2" src="images/s2.jpg">
+	<img id="s3" src="images/s3.jpg">
+	<img id="s4" src="images/s4.jpg">
+
+
+</div>
+<input type="text" class="ch" name="a">
+</body>
+</html>
