@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Count Number of Words in a String</title>
+<script src="js/jq.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $("textarea").keyup(function(){
+            var words = $.trim($("textarea").val()).split(" ");
+            // alert(words.length);
+            if (words.length == 5) {
+              $("button").removeAttr("disabled");
+            	$("textarea").attr("readonly","readonly");
+            }
+        });
+    });
+</script>
+</head>
+<body>
+    <textarea cols="50"></textarea>
+    <br>
+    <button disabled type="button">Send</button>
+</body>
+</html>             

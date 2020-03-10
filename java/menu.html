@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jq.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#st").hide();
+			$("#cu").hide();
+$("#coun").click(function(){
+if ($("#coun").val()=="jor") {
+ 	$("#cu").show();
+ 	$("#st").hide();
+ 	$(".j").show();
+ 	$(".u").hide();
+
+ }
+
+
+else if ($("#coun").val()=="uae") {
+ 	$("#cu").show();
+ 	$(".j").hide();
+ 	$("#st").hide();
+ 	$(".u").show();
+
+
+ }
+
+
+ else if ($("#coun").val()=="usa") {
+ 	$("#st").show();
+$("#cu").hide();
+
+
+ }
+
+});
+ 
+});
+
+
+	</script>
+
+	</script>
+	
+</head>
+<body>
+
+<label for="coun">Choose a country:</label>
+
+<select id="coun">
+  <option   >..</option>
+
+  <option value="jor"  >Jordan</option>
+  <option value="uae" >UEA</option>
+  <option value="usa" >USA</option>
+  
+</select>
+  
+<label for="ci">Choose a city:</label>
+
+<select id="cu">
+  <option class="j" >Amman</option>
+  <option class="j" >zarqa</option>
+  <option class="j" >Irbid</option>
+  <option class="u" >abu dhabi</option>
+  <option class="u" >dubai</option>
+  <option class="u" >shareqa</option>
+
+  
+</select>
+  
+<label for="st">Choose a state:</label>
+
+<select id="st">
+  <option value="Nj">Newyork</option>
+  <option value="Ny">Penselvania</option>
+  <option value="pen">New Jersi</option>
+  <option value="audi">Bostn</option>
+</select>
+  
+</body>
+</html>
