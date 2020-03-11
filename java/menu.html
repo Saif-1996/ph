@@ -11,6 +11,8 @@ if ($("#coun").val()=="jor") {
  	$("#cu").show();
  	$("#st").hide();
  	$(".j").show();
+  // $("#a").attr("selected","selected");
+
  	$(".u").hide();
 
  }
@@ -20,6 +22,7 @@ else if ($("#coun").val()=="uae") {
  	$("#cu").show();
  	$(".j").hide();
  	$("#st").hide();
+  // $("#b").attr("selected","selected");
  	$(".u").show();
 
 
@@ -29,6 +32,8 @@ else if ($("#coun").val()=="uae") {
  else if ($("#coun").val()=="usa") {
  	$("#st").show();
 $("#cu").hide();
+  // $("#a").attr("selected","selected");
+
 
 
  }
@@ -58,12 +63,15 @@ $("#cu").hide();
   
 <label for="ci">Choose a city:</label>
 
-<select id="cu">
-  <option class="j" >Amman</option>
+<select id="cu">  
+  <option class="j" >  </option>
+  <option id="a" class="j" >Amman</option>
+
+
   <option class="j" >zarqa</option>
   <option class="j" >Irbid</option>
   <option class="u" >abu dhabi</option>
-  <option class="u" >dubai</option>
+  <option id="b" class="u" >dubai</option>
   <option class="u" >shareqa</option>
 
   
@@ -75,7 +83,7 @@ $("#cu").hide();
   <option value="Nj">Newyork</option>
   <option value="Ny">Penselvania</option>
   <option value="pen">New Jersi</option>
-  <option value="audi">Bostn</option>
+  <option value="audi">Boston</option>
 </select>
   
 </body>
